@@ -15,7 +15,7 @@ public class DaoVehicles implements ICrudInterfaceGenerics<Vehicles>  {
 
 	@Override
 	public boolean create(Vehicles obj) {
-		String sql = "INSERT INTO vehicles(color, vehicleBrand, vehicleLicensePlate) VALUES (?, ?, ?)";
+		String sql = "INSERT INTO vehicles (color, vehiclebrand, vehiclelicenseplate) VALUES (?, ?, ?)";
 		
 		Connection isConnected = ConnectionDatabase.toConnect();
 		
@@ -62,7 +62,7 @@ public class DaoVehicles implements ICrudInterfaceGenerics<Vehicles>  {
 
 	@Override
 	public boolean update(Vehicles obj) {
-		String sql = "update vehicles set color = ?, vehicleBrand = ?, vehicleLicensePlate = ? where id = ?";
+		String sql = "update vehicles set color = ?, vehiclebrand = ?, vehiclelicenseplate = ? where id = ?";
 		
 		Connection isConnected = ConnectionDatabase.toConnect();
 		
